@@ -46,10 +46,9 @@
     "extra": {
         "laravel": {
             "providers": [
-              "CommonServiceProvider"
+              "TMS\\\\Common\\\\CommonServiceProvider"
             ],
             "aliases": {
-                "LaravelPackageExample": "KrisOzolins\\LaravelPackageExample\\Facades\\LaravelPackageExample"
             }
         }
     }
