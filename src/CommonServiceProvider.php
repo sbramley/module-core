@@ -29,9 +29,8 @@ class CommonServiceProvider extends ServiceProvider
      *
      * @var array
      */
-//    protected $commands = [
-//        FooCommand::class,
-//    ];
+    protected $commands = [
+    ];
 
     /**
      * Perform post-registration booting of services.
