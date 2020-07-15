@@ -8,9 +8,6 @@
             "email": "sam@cloudstacks.co"
         }
     ],
-    "require": {
-        "illuminate/support": "~5"
-    },
     "require-dev": {
         "phpunit/phpunit": "^7.0",
         "mockery/mockery": "^1.1",
