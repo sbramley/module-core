@@ -1,6 +1,6 @@
 {
-    "name": "timeless/module-core",
-    "description": "TMS Core package",
+    "name": "timeless/module-common",
+    "description": "TMS Common package",
     "version": "1.0.0",
     "authors": [
         {
