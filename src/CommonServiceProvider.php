@@ -42,7 +42,9 @@ class CommonServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', $this->vendorName);
         // $this->loadViewsFrom(__DIR__.'/../resources/views', $this->vendorName);
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/view.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
@@ -71,6 +73,10 @@ class CommonServiceProvider extends ServiceProvider
 
         // Make alias for use with package name
         $this->app->alias(Common::class, $this->packageName);
+
+        $this->app->bind(
+            'TMS\Common\Repositories\User\UserRepositoryInterface',
+            'TMS\Common\Repositories\User\UserRepository');
     }
 
     /**
