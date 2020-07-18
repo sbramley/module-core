@@ -1,9 +1,9 @@
 <?php
 
-namespace KrisOzolins\LaravelPackageExample\Tests;
+namespace TMS\Common\Tests;
 
 use Orchestra\TestBench\TestCase as OrchestraTestCase;
-use KrisOzolins\LaravelPackageExample\CommonServiceProvider;
+namespace TMS\Common\CommonServiceProvider;
 
 abstract class PackageTestCase extends OrchestraTestCase
 {
